@@ -59,11 +59,11 @@ async function loadStandings(filename, elementId) {
 
 // Load both JSON files independently
 loadStandings(
-    "national_foosball_standings.json",
+    "Foosball-Website/national_foosball_standings.json",
     "national-standings"
 );
 
 loadStandings(
-    "national_foosball_standings_jv.json",
+    "Foosball-Website/national_foosball_standings_jv.json",
     "jv-standings"
 );
