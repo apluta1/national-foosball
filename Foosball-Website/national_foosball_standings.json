@@ -2,85 +2,85 @@
     {
         "rank": 1,
         "username": "Billdos",
-        "wins": 5,
+        "wins": 6,
         "losses": 2,
-        "points": 907
+        "points": 1072
     },
     {
         "rank": 2,
-        "username": "Lake America Yacht Club",
+        "username": "Doctor Doom",
         "wins": 5,
-        "losses": 2,
-        "points": 837
+        "losses": 3,
+        "points": 1108
     },
     {
         "rank": 3,
-        "username": "\u2618\ufe0f Blew a 3-1 Lead ",
-        "wins": 4,
+        "username": "grace\u2019s boys",
+        "wins": 5,
         "losses": 3,
-        "points": 984
+        "points": 1067
     },
     {
         "rank": 4,
-        "username": "Steel City ",
-        "wins": 4,
+        "username": "Lake America Yacht Club",
+        "wins": 5,
         "losses": 3,
-        "points": 979
+        "points": 941
     },
     {
         "rank": 5,
-        "username": "Doctor Doom",
+        "username": "\u2618\ufe0f Blew a 3-1 Lead ",
         "wins": 4,
-        "losses": 3,
-        "points": 979
+        "losses": 4,
+        "points": 1116
     },
     {
         "rank": 6,
-        "username": "grace\u2019s boys",
+        "username": "Steel City ",
         "wins": 4,
-        "losses": 3,
-        "points": 920
+        "losses": 4,
+        "points": 1105
     },
     {
         "rank": 7,
-        "username": "NJBigJim",
-        "wins": 3,
+        "username": "DaejonLove#Chosen1",
+        "wins": 4,
         "losses": 4,
-        "points": 969
+        "points": 948
     },
     {
         "rank": 8,
-        "username": "Purple Pain",
+        "username": "NJBigJim",
         "wins": 3,
-        "losses": 4,
-        "points": 908
+        "losses": 5,
+        "points": 1095
     },
     {
         "rank": 9,
-        "username": "Ousted by the SEC",
+        "username": "HeroesAmongUs",
         "wins": 3,
-        "losses": 4,
-        "points": 848
+        "losses": 5,
+        "points": 1061
     },
     {
         "rank": 10,
-        "username": "DaejonLove#Chosen1",
+        "username": "Purple Pain",
         "wins": 3,
-        "losses": 4,
-        "points": 810
+        "losses": 5,
+        "points": 1012
     },
     {
         "rank": 11,
-        "username": "HeroesAmongUs",
-        "wins": 2,
+        "username": "Tuas padded 500 lb helmet",
+        "wins": 3,
         "losses": 5,
-        "points": 908
+        "points": 999
     },
     {
         "rank": 12,
-        "username": "Tuas padded 500 lb helmet",
-        "wins": 2,
+        "username": "Ousted by the SEC",
+        "wins": 3,
         "losses": 5,
-        "points": 864
+        "points": 960
     }
 ]
