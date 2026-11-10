@@ -2,85 +2,85 @@
     {
         "rank": 1,
         "username": "Chinatown\u2019s Finest",
-        "wins": 7,
+        "wins": 8,
         "losses": 1,
-        "points": 1376
+        "points": 1530
     },
     {
         "rank": 2,
         "username": "Gibblets n' Gravy",
         "wins": 6,
-        "losses": 2,
-        "points": 1078
+        "losses": 3,
+        "points": 1215
     },
     {
         "rank": 3,
-        "username": "Go nuts for donuts ",
+        "username": "Inglorious Staffords",
         "wins": 5,
-        "losses": 3,
-        "points": 1045
+        "losses": 4,
+        "points": 1221
     },
     {
         "rank": 4,
-        "username": "CharlotteGray",
+        "username": "Go nuts for donuts ",
         "wins": 5,
-        "losses": 3,
-        "points": 996
+        "losses": 4,
+        "points": 1158
     },
     {
         "rank": 5,
-        "username": "To Infinity And Bijan",
+        "username": "CharlotteGray",
         "wins": 5,
-        "losses": 3,
-        "points": 959
+        "losses": 4,
+        "points": 1091
     },
     {
         "rank": 6,
-        "username": "Inglorious Staffords",
-        "wins": 4,
+        "username": "To Infinity And Bijan",
+        "wins": 5,
         "losses": 4,
-        "points": 1111
+        "points": 1080
     },
     {
         "rank": 7,
-        "username": "Beat that L",
+        "username": "BACK2BACK like im Jordan",
         "wins": 4,
-        "losses": 4,
-        "points": 1022
+        "losses": 5,
+        "points": 1163
     },
     {
         "rank": 8,
-        "username": "BACK2BACK like im Jordan",
-        "wins": 3,
+        "username": "Beat that L",
+        "wins": 4,
         "losses": 5,
-        "points": 993
+        "points": 1125
     },
     {
         "rank": 9,
         "username": "Team Sports",
-        "wins": 3,
+        "wins": 4,
         "losses": 5,
-        "points": 775
+        "points": 903
     },
     {
         "rank": 10,
         "username": "LiLiBalls",
-        "wins": 2,
+        "wins": 3,
         "losses": 6,
-        "points": 896
+        "points": 1016
     },
     {
         "rank": 11,
         "username": "PureEnergy",
-        "wins": 2,
+        "wins": 3,
         "losses": 6,
-        "points": 873
+        "points": 996
     },
     {
         "rank": 12,
-        "username": "Eat that W",
+        "username": "Give me Donuts Already",
         "wins": 2,
-        "losses": 6,
-        "points": 852
+        "losses": 7,
+        "points": 960
     }
 ]
