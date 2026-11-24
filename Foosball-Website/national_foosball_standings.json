@@ -2,85 +2,85 @@
     {
         "rank": 1,
         "username": "Billdos",
-        "wins": 7,
+        "wins": 8,
         "losses": 3,
-        "points": 1364
+        "points": 1504
     },
     {
         "rank": 2,
         "username": "Steel City ",
-        "wins": 6,
+        "wins": 7,
         "losses": 4,
-        "points": 1406
+        "points": 1548
     },
     {
         "rank": 3,
         "username": "Doctor Doom",
-        "wins": 6,
+        "wins": 7,
         "losses": 4,
-        "points": 1379
+        "points": 1525
     },
     {
         "rank": 4,
-        "username": "grace\u2019s boys",
+        "username": "Steelers\u2019 5 toilets ",
         "wins": 6,
-        "losses": 4,
-        "points": 1274
+        "losses": 5,
+        "points": 1439
     },
     {
         "rank": 5,
-        "username": "Lake America Yacht Club",
+        "username": "grace\u2019s boys",
         "wins": 6,
-        "losses": 4,
-        "points": 1171
+        "losses": 5,
+        "points": 1411
     },
     {
         "rank": 6,
-        "username": "Steelers\u2019 5 toilets ",
-        "wins": 5,
+        "username": "Lake America Yacht Club",
+        "wins": 6,
         "losses": 5,
-        "points": 1287
+        "points": 1298
     },
     {
         "rank": 7,
-        "username": "\u2618\ufe0f Blew a 3-1 Lead ",
-        "wins": 4,
+        "username": "Purple Pain",
+        "wins": 5,
         "losses": 6,
-        "points": 1360
+        "points": 1389
     },
     {
         "rank": 8,
-        "username": "NJBigJim",
-        "wins": 4,
+        "username": "Ousted by the SEC",
+        "wins": 5,
         "losses": 6,
-        "points": 1324
+        "points": 1291
     },
     {
         "rank": 9,
-        "username": "HeroesAmongUs",
+        "username": "NJBigJim",
         "wins": 4,
-        "losses": 6,
-        "points": 1322
+        "losses": 7,
+        "points": 1461
     },
     {
         "rank": 10,
-        "username": "Purple Pain",
+        "username": "\u2618\ufe0f Blew a 3-1 Lead ",
         "wins": 4,
-        "losses": 6,
-        "points": 1280
+        "losses": 7,
+        "points": 1455
     },
     {
         "rank": 11,
-        "username": "Ousted by the SEC",
+        "username": "HeroesAmongUs",
         "wins": 4,
-        "losses": 6,
-        "points": 1192
+        "losses": 7,
+        "points": 1419
     },
     {
         "rank": 12,
         "username": "DaejonLove#Chosen1",
         "wins": 4,
-        "losses": 6,
-        "points": 1171
+        "losses": 7,
+        "points": 1243
     }
 ]
