@@ -36,7 +36,10 @@ jobs:
         run: python LeaugeInfo.py
 
       - name: Commit updated JSON files
-        run:
+          
+          shell: bash
+        run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
@@ -50,11 +53,27 @@ jobs:
 
           git commit -m "Update foosball standings"
 
-          git fetch origin main
-          git rebase origin/main
-          git add Foosball-Website/national_foosball_standings*.json
-          git diff --cached --quiet || git commit -m "Update foosball standings"
-          git push origin HEAD:main
+          for attempt in 1 2 3; do
+            git fetch origin main
+
+            if git rebase origin/main; then
+              :
+            else
+              git rebase --abort
+              echo "Rebase conflict; standings update was not pushed."
+              exit 1
+            fi
+
+            if git push origin HEAD:main; then
+              echo "Standings pushed successfully."
+              exit 0
+            fi
+
+            echo "Push rejected on attempt $attempt; retrying with the latest main."
+          done
+
+          echo "Unable to push standings after 3 attempts."
+          exit 1
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
