@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -41,13 +43,16 @@ jobs:
           git add Foosball-Website/national_foosball_standings.json
           git add Foosball-Website/national_foosball_standings_jv.json
 
-          if ! git diff --cached --quiet; then
-            git commit -m "Update foosball standings"
-            git push
-          else
+          if git diff --cached --quiet; then
             echo "No standings changes."
+            exit 0
           fi
 
+          git commit -m "Update foosball standings"
+
+          git pull --rebase origin main
+          git push origin HEAD:main
+          
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
