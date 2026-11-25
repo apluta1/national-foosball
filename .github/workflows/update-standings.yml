@@ -37,7 +37,7 @@ jobs:
 
       - name: Commit updated JSON files
           
-          shell: bash
+        shell: bash
         run: |
           set -e
           git config user.name "github-actions[bot]"
