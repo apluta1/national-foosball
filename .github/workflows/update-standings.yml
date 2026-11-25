@@ -50,9 +50,12 @@ jobs:
 
           git commit -m "Update foosball standings"
 
-          git pull --rebase origin main
+          git fetch origin main
+          git rebase origin/main
+          git add Foosball-Website/national_foosball_standings*.json
+          git diff --cached --quiet || git commit -m "Update foosball standings"
           git push origin HEAD:main
-          
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
