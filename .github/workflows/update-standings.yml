@@ -36,7 +36,7 @@ jobs:
         run: python LeaugeInfo.py
 
       - name: Commit updated JSON files
-          
+
         shell: bash
         run: |
           set -e
@@ -48,35 +48,44 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "No standings changes."
-            exit 0
-          fi
+          else
+            git commit -m "Update foosball standings"
 
-          git commit -m "Update foosball standings"
+            for attempt in 1 2 3; do
+              git fetch origin main
 
-          for attempt in 1 2 3; do
-            git fetch origin main
+              if git rebase origin/main; then
+                :
+              else
+                git rebase --abort
+                echo "Rebase conflict; standings update was not pushed."
+                exit 1
+              fi
 
-            if git rebase origin/main; then
-              :
-            else
-              git rebase --abort
-              echo "Rebase conflict; standings update was not pushed."
+              if git push origin HEAD:main; then
+                echo "Standings pushed successfully."
+                break
+              fi
+
+              echo "Push rejected on attempt $attempt; retrying with the latest main."
+            done
+
+            if ! git diff --quiet origin/main HEAD; then
+              echo "Unable to push standings after 3 attempts."
               exit 1
             fi
-
-            if git push origin HEAD:main; then
-              echo "Standings pushed successfully."
-              exit 0
-            fi
-
-            echo "Push rejected on attempt $attempt; retrying with the latest main."
-          done
-
-          echo "Unable to push standings after 3 attempts."
-          exit 1
+          fi
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+
+      - name: Verify website files
+        run: |
+          test -f index.html
+          test -f standings.html
+          test -f standings.js
+          test -f Foosball-Website/national_foosball_standings.json
+          test -f Foosball-Website/national_foosball_standings_jv.json
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
