@@ -36,7 +36,6 @@ jobs:
         run: python LeaugeInfo.py
 
       - name: Commit updated JSON files
-
         shell: bash
         run: |
           set -e
@@ -86,11 +85,21 @@ jobs:
           test -f standings.js
           test -f Foosball-Website/national_foosball_standings.json
           test -f Foosball-Website/national_foosball_standings_jv.json
+          
+      - name: Assemble Pages directory
+        run: |
+          rm -rf _site
+          mkdir _site
+          cp index.html standings.html standings.js style.css _site/
+          cp -R Foosball-Website _site/
+          cp epa_ff.png _site/
+          test -f _site/Foosball-Website/national_foosball_standings.json
+          test -f _site/Foosball-Website/national_foosball_standings_jv.json
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy website
         uses: actions/deploy-pages@v4
